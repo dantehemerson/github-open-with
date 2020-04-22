@@ -1,21 +1,37 @@
 {
-  "name": "tsc-simple-starter",
+  "private": true,
+  "name": "github-open-with",
   "version": "0.0.1",
-  "description": "",
   "author": "Dante Calderon<mail@dantecalderon.dev>",
+  "license": "MIT",
+  "description": "A browser extension to open repositories with multiple online text editors",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon",
-    "test": "jest"
+    "build": "yarn clean && npx tsc && yarn webpack",
+    "clean": "rimraf dist",
+    "webpack": "webpack",
+    "watch": "webpack -w",
+    "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/events": "^3.0.0",
+    "dom-loaded": "^2.0.0",
+    "github-injection": "^1.0.1",
+    "lodash": "^4.17.15",
+    "select-dom": "^5.1.0",
+    "webextension-polyfill": "^0.5.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.3",
-    "jest": "^25.1.0",
-    "nodemon": "^2.0.2",
-    "prettier": "^2.0.2",
-    "ts-jest": "^25.2.1",
-    "ts-node": "^8.8.1",
-    "tslint": "^6.1.0",
-    "typescript": "^3.8.3"
+    "@types/lodash": "^4.14.150",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "webextension-polyfill-ts": "^0.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }

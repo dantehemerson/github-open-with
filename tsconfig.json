@@ -1,18 +1,24 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "esModuleInterop": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
     "experimentalDecorators": true,
-    "target": "es6",
-    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es6", "dom"],
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true
   },
-  "include": ["./src/**/*"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

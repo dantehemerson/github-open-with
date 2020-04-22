@@ -1,27 +1,15 @@
-# tsc-simple-starter
+# Github Open With Extension
 
-Typescript Basic Template 
+> WIP
 
-# Use
+A browser extension to open repositories with multiple online text editors like:
 
-```
-git clone https://github.com/dantehemerson/tsc-simple-starter.git --depth=1 <project-name>
-```
+* CodeSanbox
+* Gitpod
+* Repl.it
+* ...more (comming soon)
 
-The move to your project
-
-```
-cd <project-name>
-```
-
-and remove repo
 
 ```
-rm -rf .git
-```
-
-and start yours
-
-```
-git init
+yarn install && yarn build
 ```

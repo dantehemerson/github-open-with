@@ -1,0 +1,12 @@
+/* GitHub */
+/* CSS selects by ID to override default style (loaded earlier: higher priority) */
+.repository-content > div #github-btn-container.github-file-btn,
+.file-navigation #github-btn-container {
+  margin-left: 6px;
+}
+
+.no-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
